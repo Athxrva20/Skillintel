@@ -82,31 +82,51 @@ npm install
 # Create .env with VITE_API_URL=http://localhost:5000
 npm run dev
 ```
-
 ---
 
 ## 📁 Project Structure
+
+```
 SkilLintel/
 ├── backend/
 │   ├── routes/
-│   │   ├── auth.py        # Authentication
-│   │   ├── jobs.py        # Job search
-│   │   ├── skills.py      # Skills analytics
-│   │   ├── resume.py      # Resume AI
-│   │   ├── forecast.py    # Skill forecasting
-│   │   └── roles.py       # Role explorer
-│   ├── app.py             # Flask app
-│   ├── config.py          # Configuration
-│   ├── database.py        # Supabase client
-│   └── requirements.txt
+│   │   ├── auth.py          # Authentication
+│   │   ├── jobs.py          # Job search
+│   │   ├── skills.py        # Skills analytics
+│   │   ├── resume.py        # Resume AI
+│   │   ├── forecast.py      # Skill forecasting
+│   │   └── roles.py         # Role explorer
+│   ├── app.py               # Flask app entry point
+│   ├── config.py            # Configuration
+│   ├── database.py          # Supabase client
+│   ├── requirements.txt     # Python dependencies
+│   └── .env.example         # Environment variables template
 ├── frontend/
 │   ├── src/
-│   │   ├── pages/         # All 9 pages
-│   │   ├── components/    # Navbar, Ticker
-│   │   ├── context/       # Auth, Theme
-│   │   └── utils/         # API helpers
+│   │   ├── pages/
+│   │   │   ├── Landing.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── JobSearch.jsx
+│   │   │   ├── Skills.jsx
+│   │   │   ├── ResumeAI.jsx
+│   │   │   ├── Forecast.jsx
+│   │   │   └── Roles.jsx
+│   │   ├── components/
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Ticker.jsx
+│   │   ├── context/
+│   │   │   ├── AuthContext.jsx
+│   │   │   └── ThemeContext.jsx
+│   │   ├── utils/
+│   │   │   └── api.js
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
 │   └── package.json
 └── README.md
+```
 
 ---
 
