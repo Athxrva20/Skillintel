@@ -11,7 +11,12 @@ app.config.from_object(Config)
 app.config['JWT_SECRET_KEY'] = Config.SECRET_KEY
 
 # Initialize extensions
-CORS(app, origins=['http://localhost:5173', 'http://localhost:3000'])
+CORS(app, origins=[
+    'http://localhost:5173',
+    'http://localhost:3000',
+    'https://skillintel.vercel.app',
+    'https://*.vercel.app'
+])
 bcrypt = Bcrypt(app)
 jwt = JWTManager(app)
 
