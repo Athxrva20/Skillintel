@@ -15,6 +15,7 @@ CORS(app, origins=[
     'http://localhost:5173',
     'http://localhost:3000',
     'https://skillintel.vercel.app',
+    'https://skillintel-iv4k7gk0w-atharva20.vercel.app',
     'https://*.vercel.app'
 ])
 bcrypt = Bcrypt(app)
