@@ -86,3 +86,37 @@ npm run dev
 ---
 
 ## 📁 Project Structure
+SkilLintel/
+├── backend/
+│   ├── routes/
+│   │   ├── auth.py        # Authentication
+│   │   ├── jobs.py        # Job search
+│   │   ├── skills.py      # Skills analytics
+│   │   ├── resume.py      # Resume AI
+│   │   ├── forecast.py    # Skill forecasting
+│   │   └── roles.py       # Role explorer
+│   ├── app.py             # Flask app
+│   ├── config.py          # Configuration
+│   ├── database.py        # Supabase client
+│   └── requirements.txt
+├── frontend/
+│   ├── src/
+│   │   ├── pages/         # All 9 pages
+│   │   ├── components/    # Navbar, Ticker
+│   │   ├── context/       # Auth, Theme
+│   │   └── utils/         # API helpers
+│   └── package.json
+└── README.md
+
+---
+
+## 👨‍💻 Built By
+
+**Atharva Phadatare**
+- GitHub: [@Athxrva20](https://github.com/Athxrva20)
+
+---
+
+## 📄 License
+
+MIT License — feel free to use this project for learning and personal use.
